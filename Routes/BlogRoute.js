@@ -13,7 +13,7 @@ router.get('/');
 router.delete('/:id', BlogController.deleteBlog );
 
 //Update. Needs an id to determine what needs to be updated. 
-router.put('/:id',BlogController.updateBlog );
+router.put('/:id', BlogController.updateBlog );
 
 //Create
 router.post('/', BlogController.createBlog );
