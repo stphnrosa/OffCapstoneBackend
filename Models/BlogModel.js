@@ -1,13 +1,14 @@
 import mongoose from 'mongoose'; // need monogoose to createschema
 
 const blogSchema = new mongoose.Schema ({
-    title: {type: String, require: true },
-    body: {type: String}
+    title: {type: String, required: true, trim: true }, // Blog must have a title
+    body: {type: String}, //Blog can optionally have a summary.
+    content: { type: String, required: true} // without text, blog will not be saved. Full post content.
 }, {
     timestamps: true // this automatically creates a created app field and an updated app field
 });
 
 //Below is the creation of the model
-const Blog= mongoose.model('Blog', blogSchema); 
+const Blog = mongoose.model('Blog', blogSchema); 
 
 export default Blog
