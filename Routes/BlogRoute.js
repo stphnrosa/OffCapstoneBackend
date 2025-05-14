@@ -9,16 +9,16 @@ router.get('/seed', BlogController.seedBlog);
 //index (main page). 
 router.get('/', BlogController.getBlogs);
 
-//Delete
-router.delete('/:id', BlogController.deleteBlog );
-
-//Update. Needs an id to determine what needs to be updated. 
-router.put('/:id', BlogController.updateBlog );
-
 //Create
 router.post('/', BlogController.createBlog );
 
 //Show. id route parameter to find the specific assessment they are looking for. Maybe test result 1.
 router.get('/:id', BlogController.getBlog );
+
+//Update. Needs an id to determine what needs to be updated. 
+router.put('/:id', BlogController.updateBlog );
+
+//Delete
+router.delete('/:id', BlogController.deleteBlog );
 
 export default router;

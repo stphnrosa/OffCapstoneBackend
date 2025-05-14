@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/blogs', blogRoutes); 
-app.use('/blogs/:blogId/comments', commentRoutes);
+app.use('/comments', commentRoutes);
 
 
 app.listen(PORT, () => {
