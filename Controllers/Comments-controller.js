@@ -1,3 +1,5 @@
+// reference:https://laracasts.com/discuss/channels/general-discussion/how-to-create-a-comment-with-a-blog
+// reference: https://www.geeksforgeeks.org/implement-comments-section-in-mern-blogs-and-news-website/ 
 import Comment from "../Models/CommentModel.js";
 import Blog from "../Models/BlogModel.js";
 
@@ -24,10 +26,15 @@ async function getComment(req, res) {
 // Creating New Comments
 async function createComment(req, res) {
   try {
+    const {content, tags, blogId} =req.body;
+    if (!blogId) {
+      return res.status(400).json({ error:"Blog ID required"})
+    }
+
     const createdComment = await Comment.create({
-      content: req.body.content,
-      tags: req.body.tags,
-      blog: req.params.blogId,
+      content,
+      tags,
+      blog:blogId
     });
     res.status(201).json(createdComment);
   } catch (error) {

@@ -11,7 +11,7 @@ const router = express.Router();
 router.get('/', getComments);
 
 //Create a comment
-router.post('/:id', createComment );
+router.post('/', createComment );
 
 //Show. id route parameter to find the specific comment they are looking for.
 router.get('/:id', getComment ); // blogId reference commentscontroller
