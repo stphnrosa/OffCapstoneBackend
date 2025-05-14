@@ -1,4 +1,4 @@
-import Blog from "../Models/BlogModel";
+import Blog from "../Models/BlogModel.js";
 
 async function seedBlog(req,res) {
     try{
@@ -63,8 +63,8 @@ async function getBlogs( req, res) {
   async function updateBlog(req, res) {
     try {
       const updatedBlog = await Blog.findByIdAndUpdate(
-        req.params.id,
-        req.body,
+        req.params.id, // id of the doc that is to be updated
+        req.body, // req.body contains the content/updates
         { new: true }
       ); // This third argument, the object and key {new: true} demonstrates the updated document, not the original.
       res.status(200).json(updatedBlog);

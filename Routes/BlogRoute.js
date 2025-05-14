@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/seed', BlogController.seedBlog);
 
 //index (main page). 
-router.get('/');
+router.get('/', BlogController.getBlogs);
 
 //Delete
 router.delete('/:id', BlogController.deleteBlog );
@@ -19,6 +19,6 @@ router.put('/:id', BlogController.updateBlog );
 router.post('/', BlogController.createBlog );
 
 //Show. id route parameter to find the specific assessment they are looking for. Maybe test result 1.
-router.get('/:id', BlogController.getBlogs );
+router.get('/:id', BlogController.getBlog );
 
 export default router;
