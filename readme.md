@@ -1,18 +1,22 @@
 
-## Final Capstone 
-Create a full-stack web application using MongoDB, Express, React, and Node (MERN)
+## Cortexi- Final Capstone Project
+Create a full-stack MERN web application using MongoDB, Express, React, and Node.js. Cortexi is a cognitive tracker that monitors, enhances and maintains brain health.
 
 ## Features
-Cortexi is a cognitive tracker that monitors, enhances and maintains brain health.
+Cortexi currently includes:
 
-Features of Cortexi currently includes
+  - A Community Blog Center
+     - Individuals can share new discoveries, share personal stories, and learn breaking scientific news.
+     - Read and comment on others' posts to foster community learning and support. 
 
-a community blog center where individuals can share new discoveries, share personal stories, and learn breaking scientific news.
 Coming soon:
 
-Cognitive Assessment feature - Stroop Effect test to assess cognitive performance. - Receive a baseline score to begin tracking your overall cognitive function(clarity, focus and reaction time).
-Progress Tracker feature - Tracks your performance across multiple assessments. - View progress over time through dynamic charts and visual summaries - Key goal: identifying trends in cognitive imrovement or decline
-
+  - Cognitive Assessment 
+     - Stroop Effect test to assess cognitive performance. 
+     - Receive a baseline score to begin tracking your overall cognitive function(clarity, focus and reaction time).
+  - Progress Tracker
+     - View performace trends via charts and dashboards. 
+     - Monitor improvement or decline over time.
 
 ## Questions for Guidance
  - Did you deliver a project that met all of the technical requirements?
@@ -74,9 +78,16 @@ Progress Tracker feature - Tracks your performance across multiple assessments. 
   - Build your application primarily with TypeScript. (3%)
 
 ## Technologies Used
-MongoDB
-Node
-Express
+Backend
+  - Node.js
+  - Express.js
+  - MongoDB
+  - Mongoose
+  
+Tools
+  - Postman
+  - Git
+  - Vite
 
 ## Note
 This project is for educational purposes.
